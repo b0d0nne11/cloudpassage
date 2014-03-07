@@ -56,7 +56,8 @@ end
 
 #install/upgrade the daemon
 package "cphalo" do
-    action :upgrade
+    version node['cloudpassage']['version'] if node['cloudpassage']['version'].is_a? String
+    action (node['cloudpassage']['version'] == :latest)? :upgrade : :install
     notifies :restart, "service[cphalod]", :immediately
 end
 
