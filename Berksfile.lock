@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "cloudpassage": {
+      "path": "."
+    },
+    "apt": {
+      "locked_version": "1.10.0"
+    },
+    "yum": {
+      "locked_version": "3.1.2"
+    }
+  }
+}
