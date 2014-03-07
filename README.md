@@ -28,6 +28,7 @@ Attributes
 
 * `node['cloudpassage']['repository_key']` - The CloudPassage repository key, defaults to "4e750694a24da434d6fdf0bf271ad361"
 * `node['cloudpassage']['license_key']` - Your CloudPassage license key.
+* `node['cloudpassage']['version']` - The version of the cphalo package to install. `nil` is the default and will install the package without specifying a version. `:latest` will upgrade the package without specifying a version. Any string will install the package with that version specified.
 
 Usage
 =====
