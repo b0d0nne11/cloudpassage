@@ -11,7 +11,10 @@ Requirements
 
 ## Cookbooks:
 
-This cookbook doesn't have direct dependencies on other cookbooks.
+This cookbook depends on
+
+* [yum](http://community.opscode.com/cookbooks/yum)
+* [apt](http://community.opscode.com/cookbooks/apt)
 
 ## Platforms:
 
@@ -28,6 +31,10 @@ Attributes
 
 * `node['cloudpassage']['repository_key']` - The CloudPassage repository key, defaults to "4e750694a24da434d6fdf0bf271ad361"
 * `node['cloudpassage']['license_key']` - Your CloudPassage license key.
+* `node['cloudpassage']['repo']['uri']` - CloudPassage repository URI including the repository key
+* `node['cloudpassage']['repo']['key']` - CloudPassage repository GPG key
+* `node['cloudpassage']['repo']['distribution']` - CloudPassage repository distribution, Debian only
+* `node['cloudpassage']['repo']['components']` - CloudPassage repository components, Debian only
 
 Usage
 =====
